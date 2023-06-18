@@ -86,14 +86,14 @@ i {
 }
 
 .line-clamp8{
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden; 
 }
 
 .line-clamp10{
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden; 
