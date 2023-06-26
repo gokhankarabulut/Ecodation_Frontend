@@ -18,11 +18,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 
     <!-- font-awesone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     
 
     <!-- external CSS -->
     <link rel="stylesheet" href="style.css">
@@ -68,8 +75,14 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="darkModu()"> <i class="fa-solid fa-moon"></i></button>
+                    </li>
+                </ul>
+
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Arama İçin ..." aria-label="Search">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama İçin ..." aria-label="Search">
                     <button class="btn btn-primary" type="submit">Ara</button> <!-- btn-outline-success
               -->
                 </form>
@@ -84,7 +97,7 @@
  </section> 
 
     <!-- start header codes -->
-    <header id="header_id">
+    
         <!-- div.text-white>div.container>div.p-5.text-uppercase.display-4{Frontend Eğitimimize Hoşgeldiniz}+h4{Html5 Css3 JS React}+a.btn.btn-primary+a.btn.btn-danger+a.btn.btn-success -->
         <header id="header_id">
             <div class="text-white">
@@ -101,12 +114,29 @@
 
         <!-- start main codes -->
         <main id="main_id">
-
+            <section>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel eveniet cupiditate porro amet dolor facere explicabo
+                     cumque ex quaerat sunt tenetur obcaecati sequi corporis 
+                     illum rerum nesciunt quidem, sit iste? Porro ipsa 
+                     dignissimos deserunt molestias reprehenderit commodi?
+                      Repellendus quae iure ratione aperiam architecto odio 
+                      laborum, iusto obcaecati ab consequatur, quisquam
+                       molestias! Maxime nulla magnam alias nisi dolorum 
+                       aliquam, tenetur vero. Praesentium accusantium 
+                       tempora aliquam beatae fugit autem, debitis sint 
+                       ducimus quibusdam numquam totam porro delectus eum 
+                       sunt error veniam provident placeat, nulla neque 
+                       dolore libero nesciunt eos. Quibusdam veniam sed dolores
+                        aliquid assumenda, facere qui modi, nesciunt, neque nemo repellat.</p>
+            </section>
         </main>
         <!-- end main codes -->
 
         <!-- start footer codes -->
-        <footer id="footer_id"></footer>
+        <footer id="footer_id" class="bg-dark">
+            <div class="text-center p-5 " id="copy_right">2021 - <span id="date_id"></span> &copy; Bütün Hakları Saklıdır...</div>
+        </footer>
         <!-- end footer codes -->
 
         <!-- end codes -->
