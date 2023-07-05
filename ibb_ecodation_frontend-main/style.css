@@ -62,6 +62,15 @@ i {
     clear: both;
 }
 
+.myHeading{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0.4px -0.9px rgba(0, 0, 0, 0.9);
+    opacity: 0.7;
+}
+
 /* my special Size */
 .fSize1 {
     font-size: 1rem;
@@ -84,6 +93,12 @@ i {
 }
 
 /* Line-clamp */
+.line-clamp4{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden; 
+}
 .line-clamp5{
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
@@ -124,8 +139,20 @@ i {
     height:80vh;
     padding-top:4rem;
     } 
+    
 
-    /*######################################################*/
+    
+/* Header */
+#messages{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#messages i{
+    color: blue;
+    font-size: 5rem;
+}
+
+ 
 /* Footer */
 footer {
     min-height:10rem ;
@@ -133,4 +160,15 @@ footer {
     color: #ffffff;
     background-color: black;
 
+}
+
+/* Back Top */
+#back_top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#back_top:hover{
+    opacity: 0.8;
 }
